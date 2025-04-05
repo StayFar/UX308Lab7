@@ -1,4 +1,4 @@
-import {hello} from './functions.js';
+import {hello, squarefeetToAcres, calculateMowingTime} from './functions.js';
 
 function Question1(){
     return <section>
@@ -10,4 +10,24 @@ function Question1(){
     </section>;
 }
 
-export {Question1}
+function Question2(){
+    return <section>
+2. There are 43,560 square feet per acre. Write a program that converts square feet to acres. Test at least 3 conversions.
+<h2>results</h2>
+<p>squarefeetToAcres(43560)== "{squarefeetToAcres(43560)}"</p>
+<p>squarefeetToAcres(87120) == "{squarefeetToAcres(87120)}"</p>
+<p>squarefeetToAcres(10000) == "{squarefeetToAcres(10000)}"</p>
+    </section>
+}
+
+function Question3(){
+    return <section>
+3. Given the width of a lawn in metres, length of a lawn in metres and the square metres cut per minute calculate the minutes it would take to mow that lawn. Test at least 3 lawn sizes
+<h2>results</h2>
+<p>calculateMowingTime(10, 20, 5)== "{calculateMowingTime(10, 20, 5)}"</p>
+<p>calculateMowingTime(15, 30, 10)== "{calculateMowingTime(15, 30, 10)}"</p>
+<p>calculateMowingTime(8, 12, 6)== "{calculateMowingTime(8, 12, 6)}"</p>
+    </section>
+}
+
+export {Question1, Question2, Question3}

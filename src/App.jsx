@@ -6,10 +6,9 @@ function App() {
         <Question1 />
         <Question2 />
         <Question3 />  
-        <Question4 />  
+        <Question4 /> 
         <Question5 />
         <Question6 />
-
     </>
   )
 }
